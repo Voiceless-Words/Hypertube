@@ -1,12 +1,82 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Hypertube</h1>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css"></link>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css.map"></link>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css"></link>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css.map"></link>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css"></link>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"></link>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css.map"></link>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css.map"></link>
+
+    <title>Hyper</title>
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">HyperTube</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <form class="navbar-form navbar-right">
+            <div class="form-group">
+              <input type="text" placeholder="Email" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-success">Sign in</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container" style="margin-top: 15%;">
+        <form action="/register" method="POST">
+            <div class="form-group">
+                <label for="firstname"> First Name</label>
+                <input type="text" name="firstname" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="lastname">Last Name</label>
+                <input type="text" name="lastname" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" name="username" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" name="password" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-success"> Sign Up</button>
+        </form>
+
+      <footer>
+        <p>&copy; 2019 HyperTube</p>
+      </footer>
+    </div>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  </body>
 </html>
